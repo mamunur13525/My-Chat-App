@@ -1,12 +1,15 @@
-import './App.css';
+import React from 'react';
 import Chart from './components/Chart.js/Chart';
+import Login from './components/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import useLocalStorage from './Hooks/useLocalStorage';
 
 function App() {
+  const [id, setId ] = useLocalStorage('id');
+  console.log(id)
   return (
-    <div className="App">
-     
-      <Chart/>
-    </div>
+   id ? <Chart /> :  <Login onSubmitValue={setId}/>
+  
   );
 }
 

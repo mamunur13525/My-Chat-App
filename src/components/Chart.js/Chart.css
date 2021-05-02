@@ -668,3 +668,9 @@ body {
 #frame .content .message-input .wrap button:focus {
   outline: none;
 }
+div#root {
+  width: 100%;
+}
+.App{
+  width: 100%;
+}
