@@ -542,6 +542,7 @@ body {
   color: #435f7a;
 }
 #frame .content .messages {
+  width: 100%;
   height: auto;
   min-height: calc(100% - 93px);
   max-height: calc(100% - 93px);
@@ -617,9 +618,12 @@ body {
   float: left;
   border: none;
   width: calc(100% - 90px);
-  padding: 11px 32px 10px 8px;
+  padding: 14px 32px 14px 8px;
   font-size: 0.8em;
   color: #32465a;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
 }
 @media screen and (max-width: 735px) {
   #frame .content .message-input .wrap input {
